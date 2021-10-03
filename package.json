@@ -19,5 +19,7 @@
   "devDependencies": {
     "tailwindcss": "^2.2.16"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
 }
