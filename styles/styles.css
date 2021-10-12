@@ -1,5 +1,391 @@
-@tailwind base;
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
-@tailwind components;
+button {
+    cursor: pointer;
+}
 
-@tailwind utilities;
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+
+html {
+    -ms-overflow-style: none;
+}
+
+body {
+    position: relative;
+    padding: 0%;
+    margin: 0%;
+    transition: background  1.5s;
+    
+        -webkit-transition: background 2s;
+       -moz-transition: background 2s;
+        -ms-transition: background 2s;
+         -o-transition: background 2s;
+            transition: background 2s;
+}
+
+header {
+    display: inline;
+}
+
+#welcome {
+    background-color: black;
+    height: 625px;
+}
+
+.wtBox {
+    padding: 360px 0 0 0;
+    margin: auto;
+    width: fit-content;
+}
+
+.wtBox>p {
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+#wt1 {
+    font-family: Noto sans jp;
+    font-size: 18px;
+}
+
+#wt2 {
+    font-family: Roboto;
+    font-size: 96px;
+}
+
+nav {
+    background: rgba(225, 244, 243, 0.5);
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav>ul {
+    margin: 10px 5% 0 0;
+    float: right;
+}
+
+nav>ul>li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 40px;
+    font-family: Noto Sans jp;
+}
+
+li>a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #706C61;
+    cursor: pointer;
+}
+
+/*Main*/
+
+main {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/*Content Preview Section*/
+
+#content {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+article {
+    margin-bottom: 5em;
+}
+
+article>.image-settings {
+    width: 329px;
+    height: 280px;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+    float: left;
+    margin-right: 1em;
+    border-radius: 4px;
+}
+
+.image-settings>img {
+    position: absolute;
+    left: -1000%;
+    right: -1000%;
+    top: -1000%;
+    bottom: -1000%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+article>.textPrev>h1 {
+    margin: 0;
+    font-size: 36px;
+    font-family: Roboto;
+    color: #706C61;
+    letter-spacing: 2px;
+}
+
+article>.textPrev>p {
+    font-family: Noto Sans jp;
+    font-size: 16px;
+    text-align: left;
+    line-height: 2em;
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+/*Find Me Section*/
+
+#findMe {
+    overflow: auto;
+    padding-left: 50px;
+}
+
+#findMe>.subscribe>.findmeText>h2 {
+    font-family: Roboto;
+}
+
+#findMe>.subscribe>.findmeText>p {
+    font-family: Noto Sans jp;
+}
+
+#findMe>.subscribe {
+    width: 60%;
+    float: left;
+}
+
+input[type=email] {
+    border: none;
+    background-color: #ffffff;
+    height: 2em;
+    width: 23em;
+    font-size: 26px;
+    border-bottom: 1px solid #706C61;
+    margin-bottom: 1em;
+}
+
+form>button {
+    background-color: #706C61;
+    color: white;
+    height: 30px;
+    border-radius: 4px;
+    margin-left: 39em;
+    cursor: pointer;
+}
+
+/*Aside*/
+
+.card {
+    border-radius: 5px;
+    padding: 25px;
+    margin-top: 7px;
+}
+
+aside {
+    float: right;
+    margin-right: 2em;
+}
+
+aside>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
+}
+
+aside>ul {
+    padding: 0;
+}
+
+aside>ul>li {
+    list-style: none;
+    font-family: Noto Sans jp;
+    font-size: 14px;
+}
+
+aside>ul>li>span {
+    display: inline-block;
+    min-width: 70px;
+}
+
+/*footer*/
+
+footer {
+    background-color: black;
+    text-align: center;
+}
+
+footer>.about {
+    padding-top: 6px;
+}
+
+footer>.about>p {
+    margin: 0;
+}
+
+footer>.about>p>a {
+    text-decoration: none;
+    font-family: Noto Sans jp;
+    cursor: pointer;
+    color: white;
+}
+
+footer>hr {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 0;
+}
+
+footer>.copyright>p {
+    color: white;
+    margin: 0;
+    text-decoration: none;
+    font-family: Noto Sans jp;
+    font-size: 12px;
+}
+
+/*Snackbar -Thanks for Subscribing-*/
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #706C61;
+    color: #fff;
+    text-align: center;
+    font-family: Noto Sans jp;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 3;
+    left: 50%;
+    bottom: 30px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+/*overlay caontact*/
+
+#about-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+#about-overlay>.inside-overlay {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    margin: 1em auto;
+    border-radius: 4px;
+}
+
+.inside-overlay>img {
+    border-radius: 100%;
+    width: 7em;
+    margin-top: 5em;
+}
+
+.inside-overlay>p {
+    text-align: justify;
+    margin: 18px;
+    font-size: 14px;
+    font-family: Noto Sans jp;
+}
+
+.inside-overlay>#showHowToExit {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 411px) {
+    nav {
+        position: relative;
+    }
+    #content {
+        width: 90%;
+    }
+    .textPrev {
+        margin-left: 10px;
+    }
+    input[type=email] {
+        width: 150%;
+    }
+    form>button {
+        margin-left: 110%;
+    }
+}
