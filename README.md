@@ -1,3 +1,3 @@
 # Sayyid Protofolio Website
 
-https://sayyid01.github.io/portofolio/
+https://sayyid01.github.io/protofolio/
