@@ -5,146 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>KacangNgoding Blog</title>
 </head>
 
 <body>
-    <div style="position:fixed" id="test"></div>
-    <div id="div1" data-color="black">
-        <!--Paralax Welcome-->
-        <div id="welcome">
-            <!--wt = welcome text-->
-            <div class="wtBox">
-                <p id="wt1">Welcome To</p>
-                <p id="wt2">Kacang Ngoding</p>
-            </div>
+    <section>
+        <img class="mb-5" src="/image/Aksesoris.svg" alt="aksesoris">
+        <div class="page mt-5">
+            <p class="textStyle-RubikGreyLight mb-n2">Hi</p>
+            <p class="textStyle-RubikBlackStrong mb-n1">I AM SAYYID</p>
+            <p class="textStyle-RubikBlackLight">Web Developer, Photographer, and Drone Pilot</p>
+            <button class="buttonStyle homeButtonStyle">&ltMore About Me&gt</More></button>
         </div>
-    </div>
-    
-    <header>
-        <nav>
-            <ul>
-                <li><a onclick="scrollToContent()">About Me</a></li>
-                <li><a onclick="scrollToFindMe()">Find Me</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div id="div2" data-color="white">
-        <main>
-            <div id="content">
-                <article>
-                    <div class="image-settings">
-                        <img src="image/jurien-huggins-jLWlA1HQMbE-unsplash.jpg" alt="black-people" width="500px">
-                    </div>
-                    <div class="textPrev">
-                        <h1>5 TIPS BIAR PEDE</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate ornare quam et
-                            fermentum. Duis consectetur dui eget sollicitudin varius. Mauris eleifend mattis ex in
-                            pellentesque. Quisque dignissim ultricies sapien, eget aliquam nibh tincidunt sed. Duis
-                            tristique vel neque sed eleifend.
-                        </p>
-                    </div>
-                </article>
-
-                <article>
-                    <div class="image-settings">
-                        <img src="https://cdn.pixabay.com/photo/2017/03/02/20/53/sushi-2112350_960_720.jpg" alt="sushi"
-                            width="500px">
-                    </div>
-                    <div class="textPrev">
-                        <h1>SUSHI ITU ENAK</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate ornare quam et
-                            fermentum. Duis consectetur dui eget sollicitudin varius. Mauris eleifend mattis ex in
-                            pellentesque. Quisque dignissim ultricies sapien, eget aliquam nibh tincidunt sed. Duis
-                            tristique vel neque sed eleifend.
-                        </p>
-                    </div>
-                </article>
-
-                <article>
-                    <div class="image-settings">
-                        <img src="https://cdn.pixabay.com/photo/2015/01/23/10/57/asian-food-608973_960_720.jpg"
-                            alt="rendang" width="500px">
-                    </div>
-                    <div class="textPrev">
-                        <h1>MAKAN RENDANG ENAK NIH</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate ornare quam et
-                            fermentum. Duis consectetur dui eget sollicitudin varius. Mauris eleifend mattis ex in
-                            pellentesque. Quisque dignissim ultricies sapien, eget aliquam nibh tincidunt sed. Duis
-                            tristique vel neque sed eleifend.
-                        </p>
-                    </div>
-                </article>
-            </div>
-
-            <hr>
-            <hr style="width: 40%;">
-            <div id="findMe">
-                <div class="subscribe">
-                    <div class="findmeText">
-                        <h2>Hey, you find me!</h2>
-                        <p>if you don't mind, please support me by subscribing my news letter, it's totaly free!</p>
-                    </div>
-
-                    <form action="">
-                        <input type="email" placeholder="Enter Email" name="email" id="email">
-                        <br>
-                        <button type="button" onclick="showSnackbar()">Subscribe</button>
-                    </form>
-                    <div id="snackbar">Thanks for your support</div>
-                </div>
-
-                <aside class="card">
-                    <img src="image/sayyid.jpg" alt="my photo" style="width: 13em;">
-                    <ul>
-                        <li><span>Nama</span> : Naufal Sayyid Furqoon</li>
-                        <li><span>Alamat</span> : Banyuasin</li>
-                        <li> <span>No Telpon</span> : 085268579748</li>
-                        <li><span>Email</span> : naufalsayyid1@gmail.com</li>
-                    </ul>
-
-                </aside>
-            </div>
-        </main>
-    </div>
-
-    <footer>
-        <div class="about">
-            <p><a onclick="showAbout()">About</a></p>
+        <div class="ml-5">
+            <img class="droneIcon" src="/image/Drone.png" alt="drone">
+            <img class="kameraIcon" src="/image/Kamera.png" alt="kamera">
+            <img class="webDevIcon" src="/image/Web Dev.png" alt="webdev">
         </div>
-        <div id="about-overlay" onclick="showHowToExit()">
-            <div class=" inside-overlay">
-                <img src="image/sayyid.jpg" alt="my image" onclick="off()">
-                <p>My name is Naufal Sayyid, but you can call me sayyid, I am a college student, junior programmer, and
-                    also a youtuber. And if you don't mind, please support me by subscribe to this blog and follow my
-                    social media, here's
-                    the
-                    link:
-                </p>
-                <p>
-                    <a href="https://youtube.com/kacangngoding">My Youtube</a> <br>
-                    <a href="https://instagram.com/na.sayyid.f">My Instagram</a>
-                </p>
-                <p>
-                    Oh, and Thanks for visiting my blog.
-                </p>
-                <p id="showHowToExit">am I forgot to tell you how to exit this page? oh my bad, just click my face if
-                    you want to exit this
-                    page, have a nice day!</p>
-            </div>
-        </div>
-        <hr>
-        <div class="copyright">
-            <p>© 2020 KacangNgoding. Hak Cipta Belum Dilindungi Undang-Undang.</p>
-        </div>
-    </footer>
+    </section>
+
+    <section>
+        <div></div>
+    </section>
+
 </body>
-
 <script src="js/styling.js"></script>
 
 </html>
