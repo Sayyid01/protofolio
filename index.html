@@ -12,26 +12,53 @@
 </head>
 
 <body>
-    <section>
-        <img class="mb-5" src="https://raw.githubusercontent.com/Sayyid01/portofolio/main/image/Aksesoris.svg" alt="aksesoris">
+    <section class="content" id="homePage">
+        <img class="mb-5" src="https://raw.githubusercontent.com/Sayyid01/portofolio/main/image/Aksesoris.svg"
+            alt="aksesoris">
         <div class="page mt-5">
             <p class="textStyle-RubikGreyLight mb-n2">Hi</p>
             <p class="textStyle-RubikBlackStrong mb-n1">I AM SAYYID</p>
             <p class="textStyle-RubikBlackLight">Web Developer, Photographer, and Drone Pilot</p>
-            <button class="buttonStyle homeButtonStyle">&ltMore About Me&gt</More></button>
+            <button class="buttonStyle homeButtonStyle" id="hideS1showS2">&ltMore About Me&gt</More></button>
         </div>
-        <div class="ml-5">
-            <img class="droneIcon" src="https://raw.githubusercontent.com/Sayyid01/portofolio/main/image/Drone.png" alt="drone">
-            <img class="kameraIcon" src="https://raw.githubusercontent.com/Sayyid01/portofolio/main/image/Kamera.png" alt="kamera">
-            <img class="webDevIcon" src="https://raw.githubusercontent.com/Sayyid01/portofolio/main/image/Web%20Dev.png" alt="webdev">
+        <div class="ml-5 homeIcon">
+            <img class="droneIcon" src="https://raw.githubusercontent.com/Sayyid01/portofolio/main/image/Drone.png"
+                alt="drone">
+            <img class="kameraIcon" src="https://raw.githubusercontent.com/Sayyid01/portofolio/main/image/Kamera.png"
+                alt="kamera">
+            <img class="webDevIcon" src="https://raw.githubusercontent.com/Sayyid01/portofolio/main/image/Web%20Dev.png"
+                alt="webdev">
         </div>
     </section>
 
-    <section>
-        <div></div>
+    <section class="content" id="aboutMe" style="display: none;">
+        <img class="profilePict" src="/image/Sayyid.png" alt="sayyid">
+        <div class="page helloDiv">
+            <p class="textStyle-RubikGreyLight pl-3 mb-n2">WHO AM I</p>
+            <P class="textStyle-RubikBlackStrong" style="font-size: 72px;">HELLO</P>
+        </div>
+        <div class="page textStyle-RubikBlackLightSmall" style="padding-left: 33rem; padding-right: 1rem;">
+            <p>I am a web developer, in past three years, I spent a lot of my time in learning how to make a functional
+                and reliable web based application. and at this time, I can make website with or without a framework,
+                for native simple website, I usually use HTML, CSS and Javascript, but for more complex website, I use
+                Laravel for backend and Bootstrap for frontend.</p>
+
+            <p>In my spare time, I use it for doing my other hobby, such as photography and flying a quadcopter drone
+                and from that hobby, Some people hire me in 2018 to help them record their big event using a quadcopter
+                drone inside a mall.</p>
+        </div>
     </section>
 
 </body>
 <script src="js/styling.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#hideS1showS2").click(function () {
+            $("#homePage").hide();
+            $("#aboutMe").show();
+        });
+    });
+</script>
 
 </html>
