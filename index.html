@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>KacangNgoding Blog</title>
+    <title>Sayyid Portofolio</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
             <p class="textStyle-RubikGreyLight mb-n2">Hi</p>
             <p class="textStyle-RubikBlackStrong mb-n1">I AM SAYYID</p>
             <p class="textStyle-RubikBlackLight">Web Developer, Photographer, and Drone Pilot</p>
-            <button class="buttonStyle homeButtonStyle" id="hideS1showS2">&ltMore About Me&gt</More></button>
+            <button class="buttonStyle homeButtonStyle" onclick="changeSectiontwo()">&ltMore About Me&gt</More></button>
         </div>
         <div class="ml-5 homeIcon">
             <img class="droneIcon" src="https://raw.githubusercontent.com/Sayyid01/portofolio/main/image/Drone.png"
@@ -31,13 +31,14 @@
         </div>
     </section>
 
-    <section class="content" id="aboutMe" style="display: none;">
-        <img class="profilePict" src="/image/Sayyid.png" alt="sayyid">
+    <section class="content" id="aboutMe">
+        <div class="topSpace"></div>
+        <img class="profilePict" src="https://raw.githubusercontent.com/Sayyid01/protofolio/main/image/Sayyid.png" alt="sayyid">
         <div class="page helloDiv">
             <p class="textStyle-RubikGreyLight pl-3 mb-n2">WHO AM I</p>
             <P class="textStyle-RubikBlackStrong" style="font-size: 72px;">HELLO</P>
         </div>
-        <div class="page textStyle-RubikBlackLightSmall" style="padding-left: 33rem; padding-right: 1rem;">
+        <div class="page textStyle-RubikBlackLightSmall">
             <p>I am a web developer, in past three years, I spent a lot of my time in learning how to make a functional
                 and reliable web based application. and at this time, I can make website with or without a framework,
                 for native simple website, I usually use HTML, CSS and Javascript, but for more complex website, I use
@@ -45,20 +46,13 @@
 
             <p>In my spare time, I use it for doing my other hobby, such as photography and flying a quadcopter drone
                 and from that hobby, Some people hire me in 2018 to help them record their big event using a quadcopter
-                drone inside a mall.</p>
+                drone.</p>
+            <button class="buttonStyle section2ButtonStyle" id="hideS2showS3">&ltSee what I do&gt</More></button>
         </div>
     </section>
 
 </body>
-<script src="js/styling.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $("#hideS1showS2").click(function () {
-            $("#homePage").hide();
-            $("#aboutMe").show();
-        });
-    });
-</script>
+<script src="js/styling.js"></script>
 
 </html>
