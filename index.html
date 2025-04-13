@@ -4,58 +4,362 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sayyid's Portfolio - Web Developer, Photographer, and Drone Pilot">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="image/logo.ico">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Sayyid Portofolio</title>
+    <title>Sayyid Portfolio</title>
 </head>
 
 <body>
     <section class="content" id="homePage">
-        <img class="mb-5" src="https://raw.githubusercontent.com/Sayyid01/portofolio/main/image/Aksesoris.svg"
-            alt="aksesoris">
+        <div class="geometric-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+
         <div class="page mt-5">
             <p class="textStyle-RubikGreyLight mb-n2">Hi</p>
             <p class="textStyle-RubikBlackStrong mb-n1">I AM SAYYID</p>
             <p class="textStyle-RubikBlackLight">Web Developer, Photographer, and Drone Pilot</p>
-            <button class="buttonStyle homeButtonStyle" onclick="changeSectiontwo()">&ltMore About Me&gt</More></button>
+            <button class="buttonStyle homeButtonStyle" onclick="changeSectiontwo()">&lt;More About Me&gt;</button>
         </div>
-        <div class="ml-5 homeIcon">
-            <img class="droneIcon" src="https://raw.githubusercontent.com/Sayyid01/portofolio/main/image/Drone.png"
-                alt="drone">
-            <img class="kameraIcon" src="https://raw.githubusercontent.com/Sayyid01/portofolio/main/image/Kamera.png"
-                alt="kamera">
-            <img class="webDevIcon" src="https://raw.githubusercontent.com/Sayyid01/portofolio/main/image/Web%20Dev.png"
-                alt="webdev">
+
+        <div class="floating-icons">
+            <img class="drone-icon" src="image/Drone.png" alt="drone">
+            <img class="camera-icon" src="image/Kamera.png" alt="camera">
+            <img class="webdev-icon" src="image/Web Dev.png" alt="web development">
         </div>
     </section>
 
     <section class="content" id="aboutMe">
-        <div class="topSpace"></div>
-        <img class="profilePict" src="https://raw.githubusercontent.com/Sayyid01/protofolio/main/image/Sayyid.png" alt="sayyid">
-        <div class="page helloDiv">
-            <p class="textStyle-RubikGreyLight pl-3 mb-n2">WHO AM I</p>
-            <P class="textStyle-RubikBlackStrong" style="font-size: 72px;">HELLO</P>
-        </div>
-        <div class="page textStyle-RubikBlackLightSmall">
-            <p>I am a web developer, in past three years, I spent a lot of my time in learning how to make a functional
-                and reliable web based application. and at this time, I can make website with or without a framework,
-                for native simple website, I usually use HTML, CSS and Javascript, but for more complex website, I use
-                Laravel for backend and Bootstrap for frontend.</p>
+        <div class="about-container">
+            <div class="profile-container">
+                <div class="profile-background"></div>
+                <img class="profilePict" src="image/sayyid.jpg" alt="Sayyid profile picture">
+            </div>
 
-            <p>In my spare time, I use it for doing my other hobby, such as photography and flying a quadcopter drone
-                and from that hobby, Some people hire me in 2018 to help them record their big event using a quadcopter
-                drone.</p>
-            <button class="buttonStyle section2ButtonStyle" id="hideS2showS3">&ltSee what I do&gt</More></button>
-        </div>
-        <div id="homeButton" onclick="backSectionOne()">
-            <img id="imgHomeButton" src="https://raw.githubusercontent.com/Sayyid01/protofolio/main/image/asset/Back%20To%20Home.png" onmouseover="this.src='https://raw.githubusercontent.com/Sayyid01/protofolio/main/image/asset/Back%20To%20Home_Hover.png'" onmouseout="this.src='https://raw.githubusercontent.com/Sayyid01/protofolio/main/image/asset/Back%20To%20Home.png'" alt="home button">
+            <div class="about-content">
+                <h1 class="textStyle-RubikBlackStrong hello-title">HELLO</h1>
+
+                <div class="about-text textStyle-RubikBlackLightSmall">
+                    <p>I am a web developer, in past three years, I spent a lot of my time in learning how to make a
+                        functional
+                        and reliable web based application. and at this time, I can make website with or without a
+                        framework,
+                        for native simple website, I usually use HTML, CSS and Javascript, but for more complex website,
+                        I use
+                        Laravel for backend and Bootstrap for frontend.</p>
+
+                    <p>In my spare time, I use it for doing my other hobby, such as photography and flying a quadcopter
+                        drone
+                        and from that hobby, Some people hire me in 2018 to help them record their big event using a
+                        quadcopter
+                        drone.</p>
+
+                    <div class="button-container">
+                        <button class="buttonStyle section2ButtonStyle" onclick="showPortfolio()">&lt;See what I
+                            do&gt;</button>
+                        <button class="buttonStyle back-home-btn" onclick="backSectionOne()">&lt;Back to
+                            Home&gt;</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <section class="content" id="portofolio">
+        <div class="portfolio-container">
+            <div class="portfolio-header">
+                <h2 class="textStyle-RubikBlackStrong portfolio-title">MY PORTFOLIO</h2>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image-container">
+                        <div class="portfolio-image-bg"></div>
+                        <img src="image/web-project.jpg" class="portfolio-image"
+                            alt="Web Development Project">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-item-title">Web Development Project</h3>
+                        <p class="portfolio-item-desc">A responsive website built with HTML, CSS, and JavaScript.
+                            Featuring modern design principles and optimized for all devices.</p>
+                        <button class="buttonStyle portfolio-btn" onclick="showWebProjects()">&lt;View
+                            Projects&gt;</button>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image-container">
+                        <div class="portfolio-image-bg"></div>
+                        <img src="image/photography.jpg" class="portfolio-image" alt="Photography Collection">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-item-title">Photography Collection</h3>
+                        <p class="portfolio-item-desc">A collection of my best photography work. Capturing moments and
+                            emotions through the lens of creativity.</p>
+                        <button class="buttonStyle portfolio-btn" onclick="showGallery()">&lt;View Gallery&gt;</button>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image-container">
+                        <div class="portfolio-image-bg"></div>
+                        <img src="image/drone-footage.jpg" class="portfolio-image" alt="Drone Footage">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-item-title">Drone Footage</h3>
+                        <p class="portfolio-item-desc">Aerial photography and videography samples. Exploring
+                            perspectives from above to create stunning visual content.</p>
+                        <button class="buttonStyle portfolio-btn" onclick="showDroneFootage()">&lt;Watch Videos&gt;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-footer">
+                <button class="buttonStyle back-about-btn" onclick="backToAboutMe()">&lt;Back to About Me&gt;</button>
+                <button class="buttonStyle back-home-btn" onclick="backSectionOne()">&lt;Back to Home&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- New Web Projects Section -->
+    <section class="content" id="webProjects">
+        <div class="projects-container">
+            <div class="projects-header">
+                <h2 class="textStyle-RubikBlackStrong projects-title">WEB DEVELOPMENT PROJECTS</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Web Project 1 -->
+                <div class="project-item">
+                    <div class="project-image-container">
+                        <div class="project-image-bg"></div>
+                        <img src="image/project-1.jpg" alt="E-Commerce Website" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-item-title">E-Commerce Platform</h3>
+                        <p class="project-item-desc">A fully responsive e-commerce website built with Laravel and
+                            Bootstrap. Features include user authentication, product catalog, shopping cart, and payment
+                            integration.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Sayyid01/ecommerce-project" target="_blank"
+                                class="buttonStyle project-btn">&lt;GitHub&gt;</a>
+                            <a href="https://ecommerce-demo.example.com" target="_blank"
+                                class="buttonStyle project-btn">&lt;Live Demo&gt;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Project 2 -->
+                <div class="project-item">
+                    <div class="project-image-container">
+                        <div class="project-image-bg"></div>
+                        <img src="image/project-2.jpg" alt="Task Management App" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-item-title">Task Management App</h3>
+                        <p class="project-item-desc">A task management application built with JavaScript and CSS Grid.
+                            Features include drag-and-drop task organization, priority levels, and local storage for
+                            saving tasks.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Sayyid01/task-manager" target="_blank"
+                                class="buttonStyle project-btn">&lt;GitHub&gt;</a>
+                            <a href="https://task-manager-demo.example.com" target="_blank"
+                                class="buttonStyle project-btn">&lt;Live Demo&gt;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Project 3 -->
+                <div class="project-item">
+                    <div class="project-image-container">
+                        <div class="project-image-bg"></div>
+                        <img src="image/project-3.jpg" alt="Weather Dashboard" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-item-title">Weather Dashboard</h3>
+                        <p class="project-item-desc">A weather dashboard that fetches real-time weather data using a
+                            third-party API. Built with HTML, CSS, and JavaScript, featuring responsive design and
+                            interactive weather maps.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Sayyid01/weather-app" target="_blank"
+                                class="buttonStyle project-btn">&lt;GitHub&gt;</a>
+                            <a href="https://weather-app-demo.example.com" target="_blank"
+                                class="buttonStyle project-btn">&lt;Live Demo&gt;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Project 4 -->
+                <div class="project-item">
+                    <div class="project-image-container">
+                        <div class="project-image-bg"></div>
+                        <img src="image/project-4.jpg" alt="Portfolio Template" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-item-title">Portfolio Template</h3>
+                        <p class="project-item-desc">A customizable portfolio template for developers and designers.
+                            Built with HTML, CSS, and JavaScript, featuring smooth animations and a modern, clean
+                            design.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Sayyid01/portfolio-template" target="_blank"
+                                class="buttonStyle project-btn">&lt;GitHub&gt;</a>
+                            <a href="https://portfolio-template-demo.example.com" target="_blank"
+                                class="buttonStyle project-btn">&lt;Live Demo&gt;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-footer">
+                <button class="buttonStyle back-portfolio-btn" onclick="backToPortfolioFromProjects()">&lt;Back to
+                    Portfolio&gt;</button>
+                <button class="buttonStyle back-home-btn" onclick="backSectionOne()">&lt;Back to Home&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Gallery Section -->
+    <section class="content" id="gallery">
+        <div class="gallery-container">
+            <div class="gallery-header">
+                <h2 class="textStyle-RubikBlackStrong gallery-title">PHOTOGRAPHY COLLECTION</h2>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item">
+                    <img src="image/photography/gallery-1.jpg" alt="Photography 1" class="gallery-image">
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item">
+                    <img src="image/photography/gallery-2.jpg" alt="Photography 2" class="gallery-image">
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item">
+                    <img src="image/photography/gallery-3.jpg" alt="Photography 3" class="gallery-image">
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item">
+                    <img src="image/photography/gallery-4.jpg" alt="Photography 4" class="gallery-image">
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item">
+                    <img src="image/photography/gallery-5.jpg" alt="Photography 5" class="gallery-image">
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item">
+                    <img src="image/photography/gallery-6.jpg" alt="Photography 6" class="gallery-image">
+                </div>
+            </div>
+
+            <div class="gallery-footer">
+                <button class="buttonStyle back-portfolio-btn" onclick="backToPortfolio()">&lt;Back to
+                    Portfolio&gt;</button>
+                <button class="buttonStyle back-home-btn" onclick="backSectionOne()">&lt;Back to Home&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drone Footage Section -->
+    <section class="content" id="droneFootage">
+        <div class="drone-container">
+            <div class="drone-header">
+                <h2 class="textStyle-RubikBlackStrong drone-title">DRONE FOOTAGE</h2>
+            </div>
+
+            <div class="drone-intro">
+                <p class="textStyle-RubikBlackLightSmall">Aerial photography and videography samples captured with my
+                    drone. These videos showcase unique perspectives and stunning landscapes from above.</p>
+            </div>
+
+            <div class="drone-grid">
+                <!-- Drone Video 1 -->
+                <div class="drone-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/aAPU_dVG9PI" title="Drone Footage 1"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="drone-content">
+                        <h3 class="drone-item-title">Coastal Sunrise</h3>
+                        <p class="drone-item-desc">A breathtaking view of the sunrise over the coastline, captured with
+                            my DJI Mavic Pro drone at 400ft altitude.</p>
+                    </div>
+                </div>
+
+                <!-- Drone Video 2 -->
+                <div class="drone-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/b4q1Ei0YBsg" title="Drone Footage 2"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="drone-content">
+                        <h3 class="drone-item-title">Mountain Expedition</h3>
+                        <p class="drone-item-desc">Following hikers through a mountain trail, showcasing the scale and
+                            beauty of the natural landscape from above.</p>
+                    </div>
+                </div>
+
+                <!-- Drone Video 3 -->
+                <div class="drone-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3" title="Drone Footage 3"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="drone-content">
+                        <h3 class="drone-item-title">Urban Exploration</h3>
+                        <p class="drone-item-desc">A cinematic flight through the city, capturing architectural details
+                            and urban patterns from a unique aerial perspective.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drone-footer">
+                <button class="buttonStyle back-portfolio-btn" onclick="backToPortfolioFromDrone()">&lt;Back to
+                    Portfolio&gt;</button>
+                <button class="buttonStyle back-home-btn" onclick="backSectionOne()">&lt;Back to Home&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-3 text-center">
+        <p>&copy; 2023 Sayyid. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/Sayyid01" target="_blank" rel="noopener noreferrer">GitHub</a> |
+            <a href="https://linkedin.com/in/sayyid-furqoon" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+            <a href="mailto:naufalsayyid1@gmail.com">Email</a>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="js/styling.js"></script>
 
 </html>
