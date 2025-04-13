@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Function to preload images
 function preloadImages() {
     const images = [
-        'image/sayyid.png',
+        'image/sayyid.jpg',
         'image/Drone.png',
         'image/Kamera.png',
         'image/Web Dev.png',
