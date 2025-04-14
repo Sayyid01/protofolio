@@ -60,7 +60,7 @@ To clone and set up this portfolio site locally, follow these steps:
 
 You can view the live version of this portfolio website here:
 
-[Visit My Portfolio](https://sayyid01.github.io/protofolio/)
+[Visit My Portfolio](https://sayyid01.github.io/portfolio/)
 
 ## License
 
