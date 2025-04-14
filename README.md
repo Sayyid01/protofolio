@@ -15,7 +15,7 @@ Welcome to my personal portfolio! This is a showcase of my skills, projects, and
 
 ## About Me
 
-This is a brief introduction to who I am, my background, and what I do. I am a passionate [insert profession, e.g., web developer, software engineer, designer] with a focus on [insert area of expertise]. I create user-friendly and innovative solutions for [insert type of audience, e.g., businesses, individuals, etc.].
+Hi, my name is Sayyid.
 
 ## Technologies Used
 
@@ -71,5 +71,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Thank you for visiting my portfolio! Feel free to contact me if you have any questions or opportunities to collaborate.
 
 ```
-
-Make sure to update any placeholder sections (like "insert profession", "insert area of expertise", etc.) with your actual details.
