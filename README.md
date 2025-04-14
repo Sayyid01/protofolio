@@ -30,7 +30,6 @@ This portfolio site is built with the following technologies:
 - **Responsive Design**: The site is mobile-friendly and adapts to different screen sizes.
 - **Interactive Sections**: Hover effects, smooth scrolling, and animated transitions.
 - **Project Showcase**: Displays a collection of my work and achievements.
-- **Contact Form**: Allows visitors to contact me directly.
 
 ## Installation
 
